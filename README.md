@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Activity-Monitoring-Anomaly-Detection/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Activity-Monitoring-Anomaly-Detection?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Activity-Monitoring-Anomaly-Detection/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Activity-Monitoring-Anomaly-Detection?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Activity-Monitoring-Anomaly-Detection/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Activity-Monitoring-Anomaly-Detection?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Activity-Monitoring-Anomaly-Detection/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -79,115 +79,115 @@ The following table compares leading commercial platforms ranked by **company sc
 
 ## 🔓 Open-Source GitHub Projects
 
-Below are the premier open-source solutions for activity monitoring, anomaly detection, host/network telemetry, and SIEM architectures—**sorted in descending order by GitHub community stars**. Beside each project, the star badge directly links to that repository's stargazers page.
+Below are the premier open-source solutions for activity monitoring, anomaly detection, host/network telemetry, and SIEM architectures—**sorted in descending order by GitHub community stars**. Beside each project, the Stars_Badge directly links to that repository's stargazers page.
 
 ### 1. Elasticsearch (`elastic/elasticsearch`)
-[![GitHub Stars](https://img.shields.io/github/stars/elastic/elasticsearch?style=social&color=white)](https://github.com/elastic/elasticsearch/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/elastic/elasticsearch?style=social&color=white)](https://github.com/elastic/elasticsearch/stargazers)
 - **Description**: Distributed, RESTful search and analytics engine that acts as the foundational backbone for enterprise security log analytics and activity monitoring.
 - **Anomaly Detection Capabilities**: Powers Elastic Security; features unsupervised machine learning jobs that baseline statistical event distributions (available in Platinum/Cloud tiers) and provides extensive Kibana security rules.
 - **Tech Stack & License**: Java; Elastic License 2.0 / SSPL.
 - **Best For**: Large-scale log aggregation, distributed search, and high-throughput security event index pipelines.
 
 ### 2. Osquery (`osquery/osquery`)
-[![GitHub Stars](https://img.shields.io/github/stars/osquery/osquery?style=social&color=white)](https://github.com/osquery/osquery/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/osquery/osquery?style=social&color=white)](https://github.com/osquery/osquery/stargazers)
 - **Description**: Exposes an entire operating system as a high-performance relational database, enabling SQL queries for host activity monitoring and anomaly detection.
 - **Anomaly Detection Capabilities**: Enables scheduled differential queries on processes, open network sockets, kernel extensions, and logged-in users to spot anomalous persistence mechanisms and unexpected behavioral drift.
 - **Tech Stack & License**: C++, C; Apache 2.0.
 - **Best For**: Endpoint visibility, compliance auditing, and continuous process/file integrity telemetry.
 
 ### 3. Wazuh (`wazuh/wazuh`)
-[![GitHub Stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers)
 - **Description**: Complete open-source XDR and SIEM platform offering endpoint monitoring, log analysis, threat intelligence mapping, and regulatory compliance validation.
 - **Anomaly Detection Capabilities**: Preconfigured with thousands of correlation rules mapped to MITRE ATT&CK; includes File Integrity Monitoring (FIM), rootkit detection, and active automated response without proprietary paywalls.
 - **Tech Stack & License**: C, Python; GPLv2.
 - **Best For**: Organizations seeking a battle-tested, fully free self-hosted SIEM for host intrusion detection and compliance monitoring.
 
 ### 4. Apache Doris (`apache/doris`)
-[![GitHub Stars](https://img.shields.io/github/stars/apache/doris?style=social&color=white)](https://github.com/apache/doris/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/apache/doris?style=social&color=white)](https://github.com/apache/doris/stargazers)
 - **Description**: High-performance, real-time analytical database based on MPP architecture, engineered for lightning-fast SQL queries over massive streaming event telemetry.
 - **Anomaly Detection Capabilities**: Powers security lakes and behavioral baselines by executing sub-second aggregations, joins, and time-series deviation queries over petabytes of user and network logs.
 - **Tech Stack & License**: C++, Java; Apache 2.0.
 - **Best For**: Building hyperscale log lakes and real-time behavioral analytical backends.
 
 ### 5. CrowdSec (`crowdsecurity/crowdsec`)
-[![GitHub Stars](https://img.shields.io/github/stars/crowdsecurity/crowdsec?style=social&color=white)](https://github.com/crowdsecurity/crowdsec/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/crowdsecurity/crowdsec?style=social&color=white)](https://github.com/crowdsecurity/crowdsec/stargazers)
 - **Description**: Collaborative open-source behavioral intrusion prevention and activity monitoring engine that analyzes visitor behavior and crowdsources threat intelligence.
 - **Anomaly Detection Capabilities**: Parses system, web, and container logs using declarative YAML scenarios to detect behavioral anomalies (brute force, scraping, L7 DDoS, port knocking) and blocks attacks via remediations (bouncers).
 - **Tech Stack & License**: Go; MIT License.
 - **Best For**: Distributed behavioral defense, perimeter security, and global threat intelligence sharing.
 
 ### 6. OpenSearch (`opensearch-project/OpenSearch`)
-[![GitHub Stars](https://img.shields.io/github/stars/opensearch-project/OpenSearch?style=social&color=white)](https://github.com/opensearch-project/OpenSearch/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/opensearch-project/OpenSearch?style=social&color=white)](https://github.com/opensearch-project/OpenSearch/stargazers)
 - **Description**: 100% open-source search and analytics suite offering community-driven log management, SIEM plugins, and built-in anomaly detection plugins.
 - **Anomaly Detection Capabilities**: Includes native Random Cut Forest (RCF) machine learning algorithms for real-time unsupervised anomaly detection directly on streaming time-series log data without commercial licensing tiers.
 - **Tech Stack & License**: Java; Apache 2.0.
 - **Best For**: Teams needing pure Apache 2.0 open-source SIEM log storage with built-in ML anomaly detection algorithms.
 
 ### 7. Sigma (`SigmaHQ/sigma`)
-[![GitHub Stars](https://img.shields.io/github/stars/SigmaHQ/sigma?style=social&color=white)](https://github.com/SigmaHQ/sigma/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/SigmaHQ/sigma?style=social&color=white)](https://github.com/SigmaHQ/sigma/stargazers)
 - **Description**: The industry standard generic rule format for SIEM systems, describing malicious activity and behavioral patterns in a platform-agnostic specification.
 - **Anomaly Detection Capabilities**: Over 3,000 community-vetted detection rules that convert directly to Splunk, Elastic, Wazuh, OpenSearch, and Microsoft Sentinel queries for behavioral threat hunting.
 - **Tech Stack & License**: YAML, Python; DRL (Detection Rule License).
 - **Best For**: Standardizing behavioral detection logic and sharing threat correlation patterns across heterogeneous security stacks.
 
 ### 8. Falco (`falcosecurity/falco`)
-[![GitHub Stars](https://img.shields.io/github/stars/falcosecurity/falco?style=social&color=white)](https://github.com/falcosecurity/falco/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/falcosecurity/falco?style=social&color=white)](https://github.com/falcosecurity/falco/stargazers)
 - **Description**: Cloud-native runtime security and behavioral monitoring tool originally created by Sysdig, now a graduated CNCF project.
 - **Anomaly Detection Capabilities**: Uses eBPF kernel probes to inspect raw syscalls in real time, detecting anomalous container behaviors, unexpected privilege escalation, and unauthorized shell executions with near-zero overhead.
 - **Tech Stack & License**: C++, eBPF; Apache 2.0.
 - **Best For**: Kubernetes cluster runtime protection, container workload monitoring, and kernel-level behavioral alerting.
 
 ### 9. Zeek (`zeek/zeek`)
-[![GitHub Stars](https://img.shields.io/github/stars/zeek/zeek?style=social&color=white)](https://github.com/zeek/zeek/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/zeek/zeek?style=social&color=white)](https://github.com/zeek/zeek/stargazers)
 - **Description**: Powerful network analysis framework and behavioral telemetry generator that converts raw packet streams into structured application-layer transaction logs.
 - **Anomaly Detection Capabilities**: Executes stateful behavioral scripts to detect DNS tunneling, lateral movement, credential dumping, and anomalous protocol behaviors across enterprise network backbones.
 - **Tech Stack & License**: C++, Zeek Script; BSD 3-Clause.
 - **Best For**: In-depth network traffic analysis (NTA), behavioral network baselines, and protocol anomaly discovery.
 
 ### 10. Suricata (`OISF/suricata`)
-[![GitHub Stars](https://img.shields.io/github/stars/OISF/suricata?style=social&color=white)](https://github.com/OISF/suricata/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/OISF/suricata?style=social&color=white)](https://github.com/OISF/suricata/stargazers)
 - **Description**: Mature, multi-threaded Network Threat Detection Engine providing IDS (Intrusion Detection), IPS (Intrusion Prevention), and Network Security Monitoring (NSM).
 - **Anomaly Detection Capabilities**: High-speed protocol inspection, flow anomaly logging, file extraction, and conditional signature matching capable of analyzing line-rate 10Gbps+ traffic.
 - **Tech Stack & License**: C, Rust; GPLv2.
 - **Best For**: High-throughput network perimeter monitoring, deep packet inspection, and hardware-accelerated IDS/IPS.
 
 ### 11. Anomalib (`open-edge-platform/anomalib`)
-[![GitHub Stars](https://img.shields.io/github/stars/open-edge-platform/anomalib?style=social&color=white)](https://github.com/open-edge-platform/anomalib/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/open-edge-platform/anomalib?style=social&color=white)](https://github.com/open-edge-platform/anomalib/stargazers)
 - **Description**: Deep learning library designed specifically for unsupervised anomaly detection on visual, spatial, and sensor data pipelines.
 - **Anomaly Detection Capabilities**: Provides state-of-the-art unsupervised models (PatchCore, Padim, EfficientAD, DFM, FastFlow) for training baselines on normal samples to detect subtle anomalous deviations without supervised training labels.
 - **Tech Stack & License**: Python, PyTorch, PyTorch Lightning; Apache 2.0.
 - **Best For**: Computer vision anomaly inspection, industrial sensor telemetry monitoring, and custom ML-driven deviation detection.
 
 ### 12. Security Onion (`Security-Onion-Solutions/securityonion`)
-[![GitHub Stars](https://img.shields.io/github/stars/Security-Onion-Solutions/securityonion?style=social&color=white)](https://github.com/Security-Onion-Solutions/securityonion/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/Security-Onion-Solutions/securityonion?style=social&color=white)](https://github.com/Security-Onion-Solutions/securityonion/stargazers)
 - **Description**: Integrated, turnkey Linux distribution for threat hunting, enterprise security monitoring, and log analysis.
 - **Anomaly Detection Capabilities**: Unifies Elasticsearch/OpenSearch, Zeek, Suricata, Wazuh, CyberChef, and custom analytical engines into a comprehensive out-of-the-box SOC defense appliance.
 - **Tech Stack & License**: Python, Shell; AGPLv3.
 - **Best For**: Turnkey SOC deployment, rapid network forensic investigations, and full-spectrum enterprise sensor grids.
 
 ### 13. Velociraptor (`Velocidex/velociraptor`)
-[![GitHub Stars](https://img.shields.io/github/stars/Velocidex/velociraptor?style=social&color=white)](https://github.com/Velocidex/velociraptor/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/Velocidex/velociraptor?style=social&color=white)](https://github.com/Velocidex/velociraptor/stargazers)
 - **Description**: Advanced digital forensics and incident response (DFIR) platform designed for real-time endpoint activity hunting and telemetry collection.
 - **Anomaly Detection Capabilities**: Uses VQL (Velociraptor Query Language) to dynamically query, baseline, and hunt across thousands of endpoints simultaneously for memory anomalies, persistence keys, and malicious process parentage.
 - **Tech Stack & License**: Go; AGPLv3.
 - **Best For**: Fast-paced threat hunting, endpoint artifact inspection, and forensic anomaly triage across enterprise fleets.
 
 ### 14. TheHive (`TheHive-Project/TheHive`)
-[![GitHub Stars](https://img.shields.io/github/stars/TheHive-Project/TheHive?style=social&color=white)](https://github.com/TheHive-Project/TheHive/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/TheHive-Project/TheHive?style=social&color=white)](https://github.com/TheHive-Project/TheHive/stargazers)
 - **Description**: Scalable, open-source Security Incident Response Platform (SIRP) closely integrated with MISP and Cortex for alert triage.
 - **Anomaly Detection Capabilities**: Aggregates anomalous activity alerts generated by SIEMs and NDR engines, categorizes observables, deduplicates alerts, and coordinates automated incident investigation playbooks.
 - **Tech Stack & License**: Scala, Java; AGPLv3.
 - **Best For**: SOC alert orchestration, collaborative incident response, and observable tracking.
 
 ### 15. VictoriaLogs (`VictoriaMetrics/VictoriaLogs`)
-[![GitHub Stars](https://img.shields.io/github/stars/VictoriaMetrics/VictoriaLogs?style=social&color=white)](https://github.com/VictoriaMetrics/VictoriaLogs/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/VictoriaMetrics/VictoriaLogs?style=social&color=white)](https://github.com/VictoriaMetrics/VictoriaLogs/stargazers)
 - **Description**: Ultra-resource-efficient log management and analytical engine capable of operating on a fraction of the RAM required by traditional Elastic stacks.
 - **Anomaly Detection Capabilities**: Features LogsQL for instantaneous frequency analysis, percentile tracking, and time-series event anomaly discovery across high-cardinality cloud log streams.
 - **Tech Stack & License**: Go; Apache 2.0.
 - **Best For**: Lightweight, cost-effective activity logging, long-term forensic retention, and resource-constrained edge deployments.
 
 ### 16. Security Shallots (`benolenick/security-shallots`)
-[![GitHub Stars](https://img.shields.io/github/stars/benolenick/security-shallots?style=social&color=white)](https://github.com/benolenick/security-shallots/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/benolenick/security-shallots?style=social&color=white)](https://github.com/benolenick/security-shallots/stargazers)
 - **Description**: Extremely lightweight, self-hosted security and network monitoring tool engineered to run on minimal hardware (from a Raspberry Pi to small home lab servers).
 - **Anomaly Detection Capabilities**: Ingests router, DNS, syslog, and Suricata signals; normalizes events; discovers behavioral baselines; and optionally leverages local offline LLMs to produce plain-English threat narratives without cloud API keys.
 - **Tech Stack & License**: Python, SQLite; MIT License.
@@ -220,7 +220,7 @@ Contributions are warmly welcomed! To contribute:
 1. 🍴 **Fork the repository** to your GitHub account.
 2. 🌿 **Create a branch** for your updates (`git checkout -b feature/add-new-detector`).
 3. 📝 **Add or update entries** following our existing structured format:
-   - Name, official repository link, and social star badge.
+   - Name, official repository link, and social Stars_Badge.
    - Core description and anomaly detection capabilities.
    - Tech stack and open-source license.
    - Target use-case and key trade-offs.
