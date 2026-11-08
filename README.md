@@ -32,77 +32,30 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global activity monitoring, SIEM, and UEBA market is valued at approximately $9.5B–$12B in 2025–2026 (with core SIEM at ~$8.4B–$12B and dedicated UEBA rapidly expanding past $4B at >35% CAGR). The sector exhibits a moderately concentrated core dominated by multi-product tech giants (Cisco/Splunk, Microsoft Sentinel, Datadog) bundled alongside a fragmented long-tail of specialized behavioral AI, niche UEBA providers, and open-source ecosystems.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **Datadog Security Monitoring**
-
-  **Cloud security monitoring** with anomaly detection and correlation. **Pricing**: **Pro $15/host/month**; **Enterprise $23/host/month** adds Machine Learning, Anomaly Detection, and Forecast Insights; **DevSecOps Enterprise $34/host/month** adds Data Security and cloud workload monitoring . **Free tier**: Trial available; no perpetual free tier. **Best for**: teams already on Datadog wanting security anomalies alongside observability—**trade-off**: ML anomaly detection requires Enterprise tier; per-host costs scale with infrastructure .
-
-
-
-- **Splunk Enterprise Security**
-
-  **Enterprise SIEM** with deep detection content and UEBA in Premier tier. **Pricing**: **Ingest-based (GB/day)**: at 100–199 GB/day, **ES Essentials $759/GB/day/year**, **ES Premier $1,783.65/GB/day/year** (plus platform license) . **UEBA is included only in Premier** . **Free tier**: None. **Best for**: large enterprises with heavy custom detection needs—**trade-off**: costs scale steeply with data volume; UEBA gated to Premier .
-
-
-
-- **Sumo Logic Cloud SIEM**
-
-  **Cloud-native SIEM** with behavioral analytics. **Pricing**: **Cloud SIEM ingest costs 40 credits/GB**—the most expensive data type on the platform, higher than tracing (35) or standard logs (25) . Credits priced at **$0.25 (Credits model)** or **$1.50 suggested resale (Flex)** . **Free tier**: Trial available. **Best for**: cloud-first teams wanting managed SIEM with usage-based pricing—**trade-off**: SIEM ingest is separately metered and expensive; log volume is the primary cost driver .
-
-
-
-- **Dynatrace Davis AI**
-
-  **Causal AI for root cause analysis** and anomaly detection. **Pricing**: **Per-module consumption**—infrastructure, APM, logs, and security are priced separately; **no permanent free tier** . **Free tier**: Trial only. **Best for**: teams wanting deterministic root cause analysis rather than correlated alerts—**trade-off**: per-module pricing makes costs hard to forecast; learning curve is steep .
-
-
-
-- **New Relic Alerts**
-
-  **Observability platform** with anomaly detection and alerting. **Pricing**: **Free tier includes 100 GB/month ingest, one full platform user, unlimited basic users**; paid data **$0.40/GB (Original)** or **$0.60/GB (Data Plus)**; **Pro full platform users $349/user/year (annual)** . **Free tier**: Yes, perpetual 100 GB/month. **Best for**: teams wanting observability with anomaly detection without per-host charges—**trade-off**: anomaly detection is part of the broader platform, not a dedicated security tool .
-
-
-
-- **Elastic Security**
-
-  **SIEM with ML anomaly detection on Platinum+**. **Pricing**: **Basic self-managed free** (prebuilt detection rules, Kibana dashboards, **no ML**); **Platinum (~$131/month)** adds **ML anomaly detection** and cross-cluster replication . **Free tier**: Yes, Basic self-managed. **Best for**: teams wanting an open-core SIEM with a free entry point—**trade-off**: anomaly detection requires Platinum; free tier lacks ML and response actions .
-
-
-
-- **Rapid7 InsightIDR**
-
-  **SIEM with UEBA and anomaly detection**. **Pricing**: **Quote-only**; **log ingestion volume is the critical cost driver**—negotiate higher baseline limits and lower overage rates upfront; **annual escalation typically 3–7%** . **Free tier**: None. **Best for**: mid-market to enterprise teams wanting managed SIEM with behavioral detection—**trade-off**: overage rates can be significant; professional services add 10–20% .
-
-
-
-- **Darktrace**
-
-  **AI-driven network detection and response** with unsupervised anomaly detection. **Pricing**: **Quote-only**; reviewers consistently cite **cost as a barrier**—"pricing can be difficult to justify for a mid-sized organization"; **licensing tied to IP addresses scales quickly** . **Free tier**: None. **Best for**: organizations wanting autonomous, behavior-based network anomaly detection—**trade-off**: expensive; UI is "tricky and not very user friendly"; overwhelming during learning phase .
-
-
-
-- **Exabeam New-Scale Fusion**
-
-  **UEBA-driven SIEM** with behavioral analytics and automated investigations. **Pricing**: **Quote-only**; Gartner reviewers note **strong UEBA and reduced false positives**, but **deployment complexity and data onboarding take time**; confusion between old and new rule sets . **Free tier**: None. **Best for**: SOC teams prioritizing user behavior analytics and automated timelines—**trade-off**: setup and tuning require effort; version confusion in rule sets .
-
-
-
-- **Zoho Watch**
-
-  **Note**: No public information found for a Zoho security monitoring/anomaly detection product named "Watch" in available search results. Zoho offers security features within its admin console but not a standalone anomaly detection platform. **Best for**: verify directly with Zoho before evaluating.
+| Company / Product | Valuation / Revenue | Starting Price | Free Tier / Trial Limits | Key Capabilities & Trade-offs |
+| :--- | :--- | :--- | :--- | :--- |
+| **Datadog Security Monitoring** | **~$70B+ Market Cap** ($2.68B+ ARR) | **$15/host/mo** (Pro); **$23/host/mo** (Enterprise with ML Anomaly Detection); **$34/host/mo** (DevSecOps) | **14-day free trial** (Full platform access, no credit card required); permanent free tier capped at 5 hosts with 1-day metric retention (no security ML) | Cloud security monitoring with anomaly detection and correlation. Best for teams already using Datadog observability; trade-off is ML anomaly detection is gated to Enterprise tier and per-host infrastructure costs scale rapidly. |
+| **Splunk Enterprise Security** (Cisco) | **$28B Acquisition Valuation** (~$4B Revenue) | **$759/GB/day/yr** (ES Essentials at 100–199 GB/day); **$1,783.65/GB/day/yr** (ES Premier) | **14-day free trial** for Splunk Cloud Platform (up to 5 GB/day data limit, hosted sandbox); **60-day trial** for Splunk Enterprise (500 MB/day limit, converts to perpetual free license capped at 500 MB/day without alerts/auth) | Enterprise SIEM with deep detection content and UEBA (UEBA included only in Premier). Best for large enterprises with heavy custom detection requirements; costs scale steeply with ingest volume. |
+| **Zoho (ManageEngine Log360 / Anomaly Watch)** | **~$12.4B–$15B Estimated Valuation** (~$1.5B Revenue) | **$1,095/yr** (Log360 Cloud Professional, 10 log sources); **$1,395/yr** (Log360 Cloud Enterprise with UEBA); On-prem from **$495/yr** | **30-day free trial** (Log360 Enterprise with full UEBA, SOAR, and threat analytics, no credit card required); permanent free edition capped at 5 log sources without UEBA/correlation | Integrated SIEM and user behavior monitoring across Cloud and on-prem assets. Cost-effective for mid-market and Zoho/ManageEngine environments; trade-off is less advanced network traffic behavioral modeling than pure-play NDRs. |
+| **Dynatrace Davis AI** | **~$12.4B Market Cap** (~$1.4B+ Revenue) | **$0.01/host-hr (~$7/host/mo)** (Foundation); **$0.04/host-hr (~$29/host/mo)** (Infrastructure); **$58/mo per 8 GiB host** (Full-Stack APM & Davis AI) | **15-day free trial** (Full platform access including Davis AI and Grail, no credit card required); no permanent free tier (public playground with preloaded data available) | Causal AI for root cause analysis and anomaly detection. Best for deterministic root cause analysis rather than simple correlated alerts; trade-off is consumption-based module billing makes costs difficult to forecast. |
+| **Elastic Security** | **~$9.3B Market Cap** (~$1.3B+ Revenue) | **~$131/mo** (Elastic Cloud Platinum with unsupervised ML Anomaly Detection); Standard starts at **$99/mo** (no ML) | **14-day free trial** (Elastic Cloud with up to 1 deployment capped at 8 GB total RAM and 3 Serverless projects, no credit card required); Basic self-managed edition is perpetual free but lacks ML anomaly detection | Open-core SIEM with out-of-the-box detection rules. Best for teams already running Elasticsearch; trade-off is behavioral and ML anomaly detection requires Platinum tier. |
+| **New Relic Alerts** (Francisco Partners & TPG) | **$6.5B Acquisition Valuation** (~$926M Revenue) | **$349/user/yr** (Pro full platform user) + **$0.40/GB** (Original data ingest) or **$0.60/GB** (Data Plus) | **Perpetual Free Tier**: **100 GB/month ingest**, 1 full platform user, unlimited basic users; paid tier free trial is **30 days** | Full-stack observability platform with automated anomaly alerts and baselining. Best for unified APM and infrastructure telemetry without per-host charges; trade-off is anomaly detection is part of general observability rather than a dedicated security SIEM. |
+| **Darktrace** (Thoma Bravo) | **$5.3B Acquisition Valuation** (~$680M Revenue) | **~$20,000/yr** (Starting enterprise baseline, scales by monitored IP addresses & modules) | **30-day Proof of Value (POV) free trial** (Vendor-assisted deployment across production network/cloud/email environment, no financial commitment) | Self-learning AI-driven network detection and response (NDR) with unsupervised anomaly detection. Best for autonomous behavior baselining across zero-trust networks; trade-off is high cost and complex configuration tuning. |
+| **Exabeam New-Scale Fusion** | **~$2.4B–$2.5B Valuation** (~$200M+ Revenue) | **~$31,000/yr** (Security Log Management baseline at ~50 GB/day); **~$36,000–$75,000/yr** (Full Fusion SIEM with UEBA) | **30 to 60-day Proof of Value (POV) guided trial** (Coordinated through sales engineering to ingest telemetry and train UEBA baselines; no instant self-service trial) | Cloud-native SIEM centered around User and Entity Behavior Analytics (UEBA) and automated timeline reconstruction. Best for SOC teams prioritizing behavioral deviation over static rules; trade-off is complex onboarding and tuning. |
+| **Sumo Logic Cloud SIEM** (Francisco Partners) | **$1.7B Acquisition Valuation** (~$300M Revenue) | **$0.25/credit** (Credits model) or **$1.50/credit** (Flex model); Cloud SIEM ingest metered at **40 credits/GB** | **30-day free trial** (Ingest up to 1 GB/day, 20 users, 30 days retention) or 14-day agentic sandbox; permanent free tier capped at **1.25 credits/day (~500 MB/day)**, 3 users, 7-day retention | Cloud-native SIEM with behavioral analytics and automated insight generation. Best for cloud-first environments; trade-off is Cloud SIEM ingest is the highest-priced data category on the platform (40 credits/GB). |
+| **Rapid7 InsightIDR** | **~$1.05B Market Cap** (~$820M Revenue) | **$2,156/mo (~$25,870/yr)** billed annually (500 asset baseline minimum pack, ~**$5.89/asset/mo**) | **30-day free trial** (Full InsightIDR access for testing endpoint agents, log search, and UEBA analytics upon sales validation) | Cloud SIEM with integrated endpoint detection and behavioral analytics. Best for mid-market to enterprise SOCs seeking managed detection rules; trade-off is steep minimum asset tiers and overage rates. |
 
 
 
