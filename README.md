@@ -1,48 +1,66 @@
-# Awesome-Activity-Monitoring-Anomaly-Detection
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Activity Monitoring & Anomaly Detection Banner" width="100%" />
+</p>
 
-# Awesome-Activity-Monitoring-Anomaly-Detection
+# 🛡️ Awesome Activity Monitoring & Anomaly Detection 🔍
 
-**Top Activity Monitoring Anomaly Detection (Opensource) 🌟 Star if you like it! 🌟**
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Activity-Monitoring-Anomaly-Detection/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Activity-Monitoring-Anomaly-Detection?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Activity-Monitoring-Anomaly-Detection/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Activity-Monitoring-Anomaly-Detection?style=social" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Activity-Monitoring-Anomaly-Detection/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+---
 
+> 🚀 **A curated directory of top-tier Enterprise SaaS solutions and Open-Source tools for Activity Monitoring, User & Entity Behavior Analytics (UEBA), SIEM correlation, and Real-Time ML Anomaly Detection.**
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**
+Whether you are evaluating commercial cloud-native platforms with automated root-cause AI or architecting an entirely self-hosted detection engineering pipeline with open-source SIEM and runtime eBPF telemetry, this guide details technical capabilities, pricing baselines, free tier limits, and GitHub community momentum.
 
-*Focused on Behavioral Analytics, UEBA, SIEM Correlation & Self-Hosted Anomaly Detection*
+---
 
-**Last updated: November 2026**
+## 📑 Table of Contents
 
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Hosted Commercial Platforms](#-saas--hosted-commercial-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+  - [1. Elasticsearch (`elastic/elasticsearch`)](#1-elasticsearch-elasticelasticsearch)
+  - [2. Osquery (`osquery/osquery`)](#2-osquery-osqueryosquery)
+  - [3. Wazuh (`wazuh/wazuh`)](#3-wazuh-wazuhwazuh)
+  - [4. Apache Doris (`apache/doris`)](#4-apache-doris-apachedoris)
+  - [5. CrowdSec (`crowdsecurity/crowdsec`)](#5-crowdsec-crowdsecuritycrowdsec)
+  - [6. OpenSearch (`opensearch-project/OpenSearch`)](#6-opensearch-opensearch-projectopensearch)
+  - [7. Sigma (`SigmaHQ/sigma`)](#7-sigma-sigmahqsigma)
+  - [8. Falco (`falcosecurity/falco`)](#8-falco-falcosecurityfalco)
+  - [9. Zeek (`zeek/zeek`)](#9-zeek-zeekzeek)
+  - [10. Suricata (`OISF/suricata`)](#10-suricata-oisfsuricata)
+  - [11. Anomalib (`open-edge-platform/anomalib`)](#11-anomalib-open-edge-platformanomalib)
+  - [12. Security Onion (`Security-Onion-Solutions/securityonion`)](#12-security-onion-security-onion-solutionssecurityonion)
+  - [13. Velociraptor (`Velocidex/velociraptor`)](#13-velociraptor-velocidexvelociraptor)
+  - [14. TheHive (`TheHive-Project/TheHive`)](#14-thehive-thehive-projectthehive)
+  - [15. VictoriaLogs (`VictoriaMetrics/VictoriaLogs`)](#15-victorialogs-victoriametricsvictorialogs)
+  - [16. Security Shallots (`benolenick/security-shallots`)](#16-security-shallots-benolenicksecurity-shallots)
+- [💡 Architectural Guidance: Building Your Detection Pipeline](#-architectural-guidance-building-your-detection-pipeline)
+- [📈 Star History](#-star-history)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⚖️ Disclaimer & Compliance](#-disclaimer--compliance)
 
+---
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Activity Monitoring & Anomaly Detection**. These tools enable security and operations teams to establish behavioral baselines, detect deviations that signal threats or incidents, and correlate anomalies across logs, metrics, and user activity—from fully managed platforms with AI-driven root cause analysis to open-source SIEMs and lightweight detectors that give teams control over their detection pipeline.
+## 🌐 Sector Overview & Market Dynamics
 
+The global market for **Activity Monitoring, SIEM, and UEBA** is projected at **$9.5B–$12.0B in 2025–2026** (with core SIEM standing at ~$8.4B–$12B and standalone UEBA expanding past $4.1B at a rapid CAGR exceeding 35%). 
 
+- **Market Concentration:** The sector is **moderately concentrated at the top**, driven by tech and security conglomerates (Cisco/Splunk, Microsoft Sentinel, Datadog) that bundle behavioral analytics and AI assistants directly into multi-product enterprise licenses.
+- **Dynamic Fragmentation:** Concurrently, the operational perimeter remains **heavily fragmented** across specialized niche innovators (unsupervised network AI, agentless cloud detection) and a thriving **open-source ecosystem** (Wazuh, Falco, Zeek, OpenSearch) providing sovereign, vendor-neutral detection pipelines.
 
-**Examples** include Datadog Security Monitoring, Splunk Enterprise Security, Sumo Logic Cloud SIEM, Dynatrace Davis AI, New Relic Alerts, Elastic Security, Rapid7 InsightIDR, Darktrace, Exabeam, and Zoho Watch (the category leaders in commercial space).
+---
 
+## 🏢 SaaS & Hosted Commercial Platforms
 
-
-**Open-source emphasis**: This section is expanded with every relevant project for self-hosted anomaly detection, behavioral analytics, and open SIEM infrastructure. **Critical note**: The open-source landscape splits by depth—**Wazuh** provides the most complete free SIEM with behavioral rules , **Elastic Security** adds ML anomaly detection only on paid Platinum tiers , and **Security Shallots** offers the lightest possible starting point running on a Raspberry Pi . No open-source project matches Darktrace's unsupervised network behavioral AI or Exabeam's mature UEBA, but for rule-based detection and log correlation, the options are production-proven.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## Sector Overview & Market Dynamics
-
-The global activity monitoring, SIEM, and UEBA market is valued at approximately $9.5B–$12B in 2025–2026 (with core SIEM at ~$8.4B–$12B and dedicated UEBA rapidly expanding past $4B at >35% CAGR). The sector exhibits a moderately concentrated core dominated by multi-product tech giants (Cisco/Splunk, Microsoft Sentinel, Datadog) bundled alongside a fragmented long-tail of specialized behavioral AI, niche UEBA providers, and open-source ecosystems.
-
-## SaaS/Hosted Platforms
+The following table compares leading commercial platforms ranked by **company scale (valuation / market capitalization in descending order)**, highlighting specific entry-tier pricing and concrete free tier/trial thresholds.
 
 | Company / Product | Valuation / Revenue | Starting Price | Free Tier / Trial Limits | Key Capabilities & Trade-offs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -57,90 +75,180 @@ The global activity monitoring, SIEM, and UEBA market is valued at approximately
 | **Sumo Logic Cloud SIEM** (Francisco Partners) | **$1.7B Acquisition Valuation** (~$300M Revenue) | **$0.25/credit** (Credits model) or **$1.50/credit** (Flex model); Cloud SIEM ingest metered at **40 credits/GB** | **30-day free trial** (Ingest up to 1 GB/day, 20 users, 30 days retention) or 14-day agentic sandbox; permanent free tier capped at **1.25 credits/day (~500 MB/day)**, 3 users, 7-day retention | Cloud-native SIEM with behavioral analytics and automated insight generation. Best for cloud-first environments; trade-off is Cloud SIEM ingest is the highest-priced data category on the platform (40 credits/GB). |
 | **Rapid7 InsightIDR** | **~$1.05B Market Cap** (~$820M Revenue) | **$2,156/mo (~$25,870/yr)** billed annually (500 asset baseline minimum pack, ~**$5.89/asset/mo**) | **30-day free trial** (Full InsightIDR access for testing endpoint agents, log search, and UEBA analytics upon sales validation) | Cloud SIEM with integrated endpoint detection and behavioral analytics. Best for mid-market to enterprise SOCs seeking managed detection rules; trade-off is steep minimum asset tiers and overage rates. |
 
+---
 
+## 🔓 Open-Source GitHub Projects
 
-## Open-Source GitHub Projects
+Below are the premier open-source solutions for activity monitoring, anomaly detection, host/network telemetry, and SIEM architectures—**sorted in descending order by GitHub community stars**. Beside each project, the star badge directly links to that repository's stargazers page.
 
+### 1. Elasticsearch (`elastic/elasticsearch`)
+[![GitHub Stars](https://img.shields.io/github/stars/elastic/elasticsearch?style=social&color=white)](https://github.com/elastic/elasticsearch/stargazers)
+- **Description**: Distributed, RESTful search and analytics engine that acts as the foundational backbone for enterprise security log analytics and activity monitoring.
+- **Anomaly Detection Capabilities**: Powers Elastic Security; features unsupervised machine learning jobs that baseline statistical event distributions (available in Platinum/Cloud tiers) and provides extensive Kibana security rules.
+- **Tech Stack & License**: Java; Elastic License 2.0 / SSPL.
+- **Best For**: Large-scale log aggregation, distributed search, and high-throughput security event index pipelines.
 
+### 2. Osquery (`osquery/osquery`)
+[![GitHub Stars](https://img.shields.io/github/stars/osquery/osquery?style=social&color=white)](https://github.com/osquery/osquery/stargazers)
+- **Description**: Exposes an entire operating system as a high-performance relational database, enabling SQL queries for host activity monitoring and anomaly detection.
+- **Anomaly Detection Capabilities**: Enables scheduled differential queries on processes, open network sockets, kernel extensions, and logged-in users to spot anomalous persistence mechanisms and unexpected behavioral drift.
+- **Tech Stack & License**: C++, C; Apache 2.0.
+- **Best For**: Endpoint visibility, compliance auditing, and continuous process/file integrity telemetry.
 
-- **Wazuh**
+### 3. Wazuh (`wazuh/wazuh`)
+[![GitHub Stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers)
+- **Description**: Complete open-source XDR and SIEM platform offering endpoint monitoring, log analysis, threat intelligence mapping, and regulatory compliance validation.
+- **Anomaly Detection Capabilities**: Preconfigured with thousands of correlation rules mapped to MITRE ATT&CK; includes File Integrity Monitoring (FIM), rootkit detection, and active automated response without proprietary paywalls.
+- **Tech Stack & License**: C, Python; GPLv2.
+- **Best For**: Organizations seeking a battle-tested, fully free self-hosted SIEM for host intrusion detection and compliance monitoring.
 
-  **Open Source Security Platform: Unified XDR and SIEM** (GPLv2) — **the most complete free open-source SIEM with behavioral detection**, with no feature paywall . **Features**: **Host intrusion detection** (FIM, rootkit detection, log analysis); **vulnerability detection**; **security configuration assessment** (CIS, PCI DSS, HIPAA, NIST); **active response**; **MITRE ATT&CK mapping**; **container security** for Docker and Kubernetes. **Pricing**: **Entire platform free, self-hosted**—agent, server, indexer, dashboard, active response, FIM, vulnerability detection . **Wazuh Cloud** starts at **$571/month flat** (100 agents, 1-month indexed retention, 3-month archive); Medium **$923/month** (250 agents); Large **$1,467/month** (500 agents) . **Tech stack**: C, Python, OpenSearch. **Deploy**: Self-hosted (Docker, packages) or Wazuh Cloud. **Trade-off**: **Rule-based detection, not ML anomaly detection**—requires tuning and maintenance; Indexer consumes substantial resources. **Best for**: organizations wanting a free, comprehensive SIEM with behavioral rules and compliance mapping—willing to operate and tune the stack. **Detection method**: prebuilt, signature-style rules .
+### 4. Apache Doris (`apache/doris`)
+[![GitHub Stars](https://img.shields.io/github/stars/apache/doris?style=social&color=white)](https://github.com/apache/doris/stargazers)
+- **Description**: High-performance, real-time analytical database based on MPP architecture, engineered for lightning-fast SQL queries over massive streaming event telemetry.
+- **Anomaly Detection Capabilities**: Powers security lakes and behavioral baselines by executing sub-second aggregations, joins, and time-series deviation queries over petabytes of user and network logs.
+- **Tech Stack & License**: C++, Java; Apache 2.0.
+- **Best For**: Building hyperscale log lakes and real-time behavioral analytical backends.
 
+### 5. CrowdSec (`crowdsecurity/crowdsec`)
+[![GitHub Stars](https://img.shields.io/github/stars/crowdsecurity/crowdsec?style=social&color=white)](https://github.com/crowdsecurity/crowdsec/stargazers)
+- **Description**: Collaborative open-source behavioral intrusion prevention and activity monitoring engine that analyzes visitor behavior and crowdsources threat intelligence.
+- **Anomaly Detection Capabilities**: Parses system, web, and container logs using declarative YAML scenarios to detect behavioral anomalies (brute force, scraping, L7 DDoS, port knocking) and blocks attacks via remediations (bouncers).
+- **Tech Stack & License**: Go; MIT License.
+- **Best For**: Distributed behavioral defense, perimeter security, and global threat intelligence sharing.
 
+### 6. OpenSearch (`opensearch-project/OpenSearch`)
+[![GitHub Stars](https://img.shields.io/github/stars/opensearch-project/OpenSearch?style=social&color=white)](https://github.com/opensearch-project/OpenSearch/stargazers)
+- **Description**: 100% open-source search and analytics suite offering community-driven log management, SIEM plugins, and built-in anomaly detection plugins.
+- **Anomaly Detection Capabilities**: Includes native Random Cut Forest (RCF) machine learning algorithms for real-time unsupervised anomaly detection directly on streaming time-series log data without commercial licensing tiers.
+- **Tech Stack & License**: Java; Apache 2.0.
+- **Best For**: Teams needing pure Apache 2.0 open-source SIEM log storage with built-in ML anomaly detection algorithms.
 
-- **Elastic Security (Open Source)**
+### 7. Sigma (`SigmaHQ/sigma`)
+[![GitHub Stars](https://img.shields.io/github/stars/SigmaHQ/sigma?style=social&color=white)](https://github.com/SigmaHQ/sigma/stargazers)
+- **Description**: The industry standard generic rule format for SIEM systems, describing malicious activity and behavioral patterns in a platform-agnostic specification.
+- **Anomaly Detection Capabilities**: Over 3,000 community-vetted detection rules that convert directly to Splunk, Elastic, Wazuh, OpenSearch, and Microsoft Sentinel queries for behavioral threat hunting.
+- **Tech Stack & License**: YAML, Python; DRL (Detection Rule License).
+- **Best For**: Standardizing behavioral detection logic and sharing threat correlation patterns across heterogeneous security stacks.
 
-  **SIEM with prebuilt detection rules** (Elastic License 2.0/SSPL) — **the open-core SIEM with a usable free tier**, though anomaly detection is gated. **Features**: **Basic self-managed free**—core log ingestion, Kibana dashboards, prebuilt detection rules; **no ML, no LDAP/SAML SSO, no cross-cluster replication** . **Platinum** (~$131/month starting) adds **ML anomaly detection** (unsupervised jobs scoring behavioral anomalies against statistical baselines) and cross-cluster replication . **Tech stack**: Java, Elasticsearch. **Deploy**: Self-hosted (Basic) or Elastic Cloud. **Trade-off**: **Anomaly detection requires Platinum**; free tier lacks ML and endpoint response; source-available, not OSI open source. **Best for**: teams already on Elastic Stack wanting SIEM detection rules with a paid path to ML anomaly detection—accepting license restrictions .
+### 8. Falco (`falcosecurity/falco`)
+[![GitHub Stars](https://img.shields.io/github/stars/falcosecurity/falco?style=social&color=white)](https://github.com/falcosecurity/falco/stargazers)
+- **Description**: Cloud-native runtime security and behavioral monitoring tool originally created by Sysdig, now a graduated CNCF project.
+- **Anomaly Detection Capabilities**: Uses eBPF kernel probes to inspect raw syscalls in real time, detecting anomalous container behaviors, unexpected privilege escalation, and unauthorized shell executions with near-zero overhead.
+- **Tech Stack & License**: C++, eBPF; Apache 2.0.
+- **Best For**: Kubernetes cluster runtime protection, container workload monitoring, and kernel-level behavioral alerting.
 
+### 9. Zeek (`zeek/zeek`)
+[![GitHub Stars](https://img.shields.io/github/stars/zeek/zeek?style=social&color=white)](https://github.com/zeek/zeek/stargazers)
+- **Description**: Powerful network analysis framework and behavioral telemetry generator that converts raw packet streams into structured application-layer transaction logs.
+- **Anomaly Detection Capabilities**: Executes stateful behavioral scripts to detect DNS tunneling, lateral movement, credential dumping, and anomalous protocol behaviors across enterprise network backbones.
+- **Tech Stack & License**: C++, Zeek Script; BSD 3-Clause.
+- **Best For**: In-depth network traffic analysis (NTA), behavioral network baselines, and protocol anomaly discovery.
 
+### 10. Suricata (`OISF/suricata`)
+[![GitHub Stars](https://img.shields.io/github/stars/OISF/suricata?style=social&color=white)](https://github.com/OISF/suricata/stargazers)
+- **Description**: Mature, multi-threaded Network Threat Detection Engine providing IDS (Intrusion Detection), IPS (Intrusion Prevention), and Network Security Monitoring (NSM).
+- **Anomaly Detection Capabilities**: High-speed protocol inspection, flow anomaly logging, file extraction, and conditional signature matching capable of analyzing line-rate 10Gbps+ traffic.
+- **Tech Stack & License**: C, Rust; GPLv2.
+- **Best For**: High-throughput network perimeter monitoring, deep packet inspection, and hardware-accelerated IDS/IPS.
 
-- **Security Shallots**
+### 11. Anomalib (`open-edge-platform/anomalib`)
+[![GitHub Stars](https://img.shields.io/github/stars/open-edge-platform/anomalib?style=social&color=white)](https://github.com/open-edge-platform/anomalib/stargazers)
+- **Description**: Deep learning library designed specifically for unsupervised anomaly detection on visual, spatial, and sensor data pipelines.
+- **Anomaly Detection Capabilities**: Provides state-of-the-art unsupervised models (PatchCore, Padim, EfficientAD, DFM, FastFlow) for training baselines on normal samples to detect subtle anomalous deviations without supervised training labels.
+- **Tech Stack & License**: Python, PyTorch, PyTorch Lightning; Apache 2.0.
+- **Best For**: Computer vision anomaly inspection, industrial sensor telemetry monitoring, and custom ML-driven deviation detection.
 
-  **Lightweight, self-hosted SIEM that runs on anything** (PyPI) — **the easiest open-source anomaly detection starting point**, from a Raspberry Pi to a full server with just Python and SQLite . **Features**: **Ingests** Suricata, Syslog, pfSense, Wazuh, CrowdSec, Pi-hole, Argus agents, and web logs; **normalizes, deduplicates, and auto-classifies** severity; **correlates patterns** (port scans, brute force, lateral movement); **groups into incidents** with response runbooks; **AI triage** via OpenAI/Anthropic API (optional, no GPU); **hardware auto-detection**—adjusts profile based on available RAM/CPU . **Profiles**: Lite (<2 GB RAM, Suricata+syslog only); Micro (2–4 GB, +CrowdSec); Standard (4–8 GB, +Wazuh, VictoriaLogs, Grafana, tuned-down threat engine); Full (8+ GB, everything including baselines, graph, ML, kill chain) . **Tech stack**: Python, SQLite. **Deploy**: `pip install .`; `shallot run`; systemd service . **Trade-off**: **Small-scale focus**—not enterprise SIEM; threat engine disabled on low-RAM profiles; SQLite storage limits retention at high volume. **Best for**: homelabs, small businesses, and branch offices wanting functional anomaly detection without Elastic or Splunk infrastructure—especially those wanting to start on a Raspberry Pi .
+### 12. Security Onion (`Security-Onion-Solutions/securityonion`)
+[![GitHub Stars](https://img.shields.io/github/stars/Security-Onion-Solutions/securityonion?style=social&color=white)](https://github.com/Security-Onion-Solutions/securityonion/stargazers)
+- **Description**: Integrated, turnkey Linux distribution for threat hunting, enterprise security monitoring, and log analysis.
+- **Anomaly Detection Capabilities**: Unifies Elasticsearch/OpenSearch, Zeek, Suricata, Wazuh, CyberChef, and custom analytical engines into a comprehensive out-of-the-box SOC defense appliance.
+- **Tech Stack & License**: Python, Shell; AGPLv3.
+- **Best For**: Turnkey SOC deployment, rapid network forensic investigations, and full-spectrum enterprise sensor grids.
 
+### 13. Velociraptor (`Velocidex/velociraptor`)
+[![GitHub Stars](https://img.shields.io/github/stars/Velocidex/velociraptor?style=social&color=white)](https://github.com/Velocidex/velociraptor/stargazers)
+- **Description**: Advanced digital forensics and incident response (DFIR) platform designed for real-time endpoint activity hunting and telemetry collection.
+- **Anomaly Detection Capabilities**: Uses VQL (Velociraptor Query Language) to dynamically query, baseline, and hunt across thousands of endpoints simultaneously for memory anomalies, persistence keys, and malicious process parentage.
+- **Tech Stack & License**: Go; AGPLv3.
+- **Best For**: Fast-paced threat hunting, endpoint artifact inspection, and forensic anomaly triage across enterprise fleets.
 
+### 14. TheHive (`TheHive-Project/TheHive`)
+[![GitHub Stars](https://img.shields.io/github/stars/TheHive-Project/TheHive?style=social&color=white)](https://github.com/TheHive-Project/TheHive/stargazers)
+- **Description**: Scalable, open-source Security Incident Response Platform (SIRP) closely integrated with MISP and Cortex for alert triage.
+- **Anomaly Detection Capabilities**: Aggregates anomalous activity alerts generated by SIEMs and NDR engines, categorizes observables, deduplicates alerts, and coordinates automated incident investigation playbooks.
+- **Tech Stack & License**: Scala, Java; AGPLv3.
+- **Best For**: SOC alert orchestration, collaborative incident response, and observable tracking.
 
-### Additional Strong Open-Source Options
+### 15. VictoriaLogs (`VictoriaMetrics/VictoriaLogs`)
+[![GitHub Stars](https://img.shields.io/github/stars/VictoriaMetrics/VictoriaLogs?style=social&color=white)](https://github.com/VictoriaMetrics/VictoriaLogs/stargazers)
+- **Description**: Ultra-resource-efficient log management and analytical engine capable of operating on a fraction of the RAM required by traditional Elastic stacks.
+- **Anomaly Detection Capabilities**: Features LogsQL for instantaneous frequency analysis, percentile tracking, and time-series event anomaly discovery across high-cardinality cloud log streams.
+- **Tech Stack & License**: Go; Apache 2.0.
+- **Best For**: Lightweight, cost-effective activity logging, long-term forensic retention, and resource-constrained edge deployments.
 
-
-
-- **Apache Doris** — Real-time analytical database (Apache 2.0). Not an anomaly detector but often paired with monitoring pipelines for behavioral baselines. **Note**: Database, not SIEM. **Best for**: storing and querying behavioral telemetry at scale.
-
-- **VictoriaLogs** — Log management (Apache 2.0). Included in Shallots' Standard/Full profiles for log storage and search . **Note**: Log store, not an anomaly detector. **Best for**: teams wanting lightweight log storage alongside detection.
-
-
-
-**Frameworks for building custom systems**: Combine **Wazuh** for rule-based SIEM detection with **Elastic Security Platinum** for ML anomaly detection and **Security Shallots** for lightweight correlation—creating a layered open-source anomaly detection stack. **None of these match Darktrace's unsupervised network behavioral AI or Exabeam's mature UEBA**, but for rule-based detection, log correlation, and lightweight anomaly scoring, the options are production-capable.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, license (for open-source), and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Activity monitoring platforms handling telemetry and user behavior data must comply with data protection regulations (GDPR, CCPA, etc.) and implement appropriate access controls.
-
-- **The "ML anomaly detection" vs. "rule-based behavioral detection" vs. "lightweight correlation" distinction is critical.** **Datadog Enterprise, Elastic Platinum, Darktrace, and Exabeam** provide **ML/unsupervised anomaly detection**—they score deviations against learned baselines . **Splunk ES Premier, Sumo Logic, Rapid7 InsightIDR, and Wazuh** provide **rule-based behavioral detection**—they match known patterns and correlations . **Security Shallots** provides **lightweight correlation**—pattern matching and incident grouping on minimal hardware . **Choose based on whether you need learned baselines, known-pattern matching, or lightweight correlation.**
-
-- **Elastic Security's anomaly detection is paywalled.** The free Basic tier has prebuilt detection rules but **no ML**; Platinum (~$131/month) unlocks unsupervised anomaly jobs . **Do not evaluate Elastic Basic for anomaly detection.**
-
-- **Darktrace's cost is consistently cited as a barrier.** Reviewers note "pricing can be difficult to justify for a mid-sized organization" and "licensing tied to IP addresses can scale quickly" . **Model IP count before evaluating.**
-
-- **Sumo Logic's Cloud SIEM ingest is 40 credits/GB**—the most expensive data type on the platform, higher than tracing or standard logs . **A poorly scoped SIEM feed can consume the budget faster than any other data source.**
-
-- **Wazuh is the most complete free open-source SIEM**—no feature paywall, active response, FIM, and vulnerability detection included . **The trade-off**: rule-based, not ML; requires tuning and infrastructure.
-
-- **Security Shallots is the pragmatic starting point for homelabs and small offices**—runs on a Raspberry Pi, auto-detects hardware, and provides correlation and incident grouping . **The trade-off**: not enterprise-scale; ML threat engine requires 8+ GB RAM.
-
-- Self-hosted open-source solutions require proper infrastructure (Wazuh Indexer is resource-heavy; Shallots needs Python/SQLite), security hardening, and ongoing maintenance. **Activity monitoring tools process sensitive telemetry**—ensure your deployment meets your organization's privacy and security requirements before collecting production data.
-
-
+### 16. Security Shallots (`benolenick/security-shallots`)
+[![GitHub Stars](https://img.shields.io/github/stars/benolenick/security-shallots?style=social&color=white)](https://github.com/benolenick/security-shallots/stargazers)
+- **Description**: Extremely lightweight, self-hosted security and network monitoring tool engineered to run on minimal hardware (from a Raspberry Pi to small home lab servers).
+- **Anomaly Detection Capabilities**: Ingests router, DNS, syslog, and Suricata signals; normalizes events; discovers behavioral baselines; and optionally leverages local offline LLMs to produce plain-English threat narratives without cloud API keys.
+- **Tech Stack & License**: Python, SQLite; MIT License.
+- **Best For**: Home labs, edge environments, and small offices seeking low-power behavioral anomaly correlation without heavy server clusters.
 
 ---
 
+## 💡 Architectural Guidance: Building Your Detection Pipeline
 
+When designing an activity monitoring and anomaly detection stack, keep the following architectural trade-offs in mind:
 
-**Made for SOC teams, security engineers, and organizations building transparent anomaly detection solutions.**
+> [!IMPORTANT]
+> **ML Anomaly Detection vs. Rule-Based Correlation vs. Kernel Telemetry**
+> 1. **Machine Learning Baselines (Unsupervised Deviations)**: Platforms like *OpenSearch (RCF)*, *Elastic Cloud Platinum*, *Darktrace*, and *Anomalib* establish continuous statistical models of normal user/network traffic to flag deviations. They excel at uncovering zero-days and subtle insider threats, but require steady baselining periods.
+> 2. **Rule-Based Behavioral Correlation**: Platforms like *Wazuh*, *Sigma*, *CrowdSec*, and *ManageEngine Log360* evaluate structured telemetry against codified attack logic (MITRE ATT&CK). They generate deterministic alerts with zero training delay, but require ongoing rule maintenance.
+> 3. **Kernel & Network Telemetry Providers**: Tools like *Falco* (eBPF) and *Zeek* (deep packet parsing) act as pure telemetry engines that feed high-fidelity runtime events into your SIEM of choice.
 
-Let's make Activity Monitoring & Anomaly Detection more open, data-driven, and behavior-aware.
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Activity-Monitoring-Anomaly-Detection&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Activity-Monitoring-Anomaly-Detection&type=date&legend=top-left)
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcomed! To contribute:
+
+1. 🍴 **Fork the repository** to your GitHub account.
+2. 🌿 **Create a branch** for your updates (`git checkout -b feature/add-new-detector`).
+3. 📝 **Add or update entries** following our existing structured format:
+   - Name, official repository link, and social star badge.
+   - Core description and anomaly detection capabilities.
+   - Tech stack and open-source license.
+   - Target use-case and key trade-offs.
+4. 🚀 **Submit a Pull Request** with a concise explanation of why the addition is valuable to the community.
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find this curated intelligence list valuable for your security architecture, research, or daily SOC operations:
+
+- ⭐ **Star the repository** to boost visibility and help others discover it.
+- 🍴 **Fork and share** the project with your security and DevOps teams.
+- ☕ **Buy a coffee & sponsor ongoing research** via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Your support directly funds continuous monitoring of the security landscape, benchmark testing, and open-source documentation!
+
+---
+
+## ⚖️ Disclaimer & Compliance
+
+- This repository is a **community-curated research directory** provided for educational and architectural evaluation purposes.
+- Activity monitoring platforms processing user behavioral logs, keystrokes, network packets, or endpoint state must strictly comply with applicable privacy regulations (GDPR, CCPA, HIPAA, PCI DSS) and corporate acceptable-use policies.
+- Always ensure adequate data protection, encryption in transit/rest, and role-based access control before deploying security telemetry sensors across production environments.
+
+---
+
+<p align="center">
+  <b>Built for SOC analysts, detection engineers, and security architects worldwide.</b><br/>
+  <i>Let's make activity monitoring and anomaly detection more transparent, rigorous, and accessible.</i>
+</p>

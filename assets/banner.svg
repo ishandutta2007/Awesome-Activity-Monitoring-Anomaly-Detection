@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#0e1726"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="gridGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.01"/>
+    </linearGradient>
+
+    <!-- Node Gradient -->
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Background Grid Pattern -->
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.25"/>
+    </pattern>
+
+    <style>
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+      }
+      .pill-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+      }
+      @keyframes pulseOrb {
+        0%, 100% { transform: scale(1); opacity: 0.35; }
+        50% { transform: scale(1.15); opacity: 0.65; }
+      }
+      @keyframes waveLine {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -200; }
+      }
+      @keyframes alertPulse {
+        0%, 100% { r: 6; opacity: 1; }
+        50% { r: 10; opacity: 0.4; }
+      }
+      .pulse-1 { animation: pulseOrb 7s ease-in-out infinite; transform-origin: 200px 100px; }
+      .pulse-2 { animation: pulseOrb 9s ease-in-out infinite reverse; transform-origin: 1000px 320px; }
+      .dynamic-wave {
+        stroke-dasharray: 8 6;
+        animation: waveLine 15s linear infinite;
+      }
+      .dynamic-wave-fast {
+        stroke-dasharray: 6 4;
+        animation: waveLine 10s linear infinite;
+      }
+      .alert-dot {
+        animation: alertPulse 2s infinite ease-in-out;
+      }
+    </style>
+  </defs>
+
+  <!-- Deep Background Canvas -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Animated Glowing Background Orbs -->
+  <circle class="pulse-1" cx="200" cy="100" r="140" fill="#0284c7" filter="url(#glow)" opacity="0.35" />
+  <circle class="pulse-2" cx="1020" cy="310" r="150" fill="#7c3aed" filter="url(#glow)" opacity="0.35" />
+  <circle cx="600" cy="210" r="180" fill="#0f766e" filter="url(#glow)" opacity="0.18" />
+
+  <!-- Technical Grid Overlay -->
+  <rect width="1200" height="420" rx="16" fill="url(#gridPattern)" />
+
+  <!-- Ambient Wave Lines (Telemetry / Anomaly Visuals) -->
+  <g opacity="0.45">
+    <!-- Telemetry Baseline Signal -->
+    <path class="dynamic-wave" d="M 0 340 Q 150 320 300 350 T 600 330 T 900 360 T 1200 335" fill="none" stroke="#38bdf8" stroke-width="2" />
+    <!-- Secondary Anomaly Deviation Curve -->
+    <path class="dynamic-wave-fast" d="M 0 370 C 250 380, 380 340, 550 365 C 750 395, 880 320, 1200 375" fill="none" stroke="#818cf8" stroke-width="1.5" />
+  </g>
+
+  <!-- Interactive / Floating Visual Indicators (Telemetry Pipeline) -->
+  <g transform="translate(860, 60)" opacity="0.95">
+    <!-- Outer Card Frame -->
+    <rect width="280" height="150" rx="12" fill="url(#nodeGrad)" stroke="#334155" stroke-width="1.5" />
+    <text x="18" y="32" fill="#94a3b8" class="pill-text" font-size="11" letter-spacing="1">REAL-TIME BEHAVIORAL PIPELINE</text>
+    
+    <!-- Mini Metric Sparkline -->
+    <path d="M 20 100 L 60 95 L 90 102 L 130 80 L 160 88 L 190 55 L 210 115 L 240 70 L 260 75" fill="none" stroke="#38bdf8" stroke-width="2" />
+    
+    <!-- Anomaly Spike Indicator -->
+    <circle cx="190" cy="55" r="5" fill="#ef4444" filter="url(#subtleGlow)" />
+    <circle class="alert-dot" cx="190" cy="55" r="9" fill="none" stroke="#ef4444" stroke-width="2" />
+    <text x="175" y="40" fill="#f87171" class="pill-text" font-size="10">ANOMALY [99.8%]</text>
+
+    <!-- Status Ticker -->
+    <rect x="20" y="118" width="8" height="8" rx="4" fill="#10b981" />
+    <text x="35" y="126" fill="#cbd5e1" class="subtitle-text" font-size="11">Baselining: 142k events/s</text>
+  </g>
+
+  <!-- Central Brand & Foreground Content (Guaranteed foreground visibility) -->
+  <g transform="translate(80, 0)">
+    
+    <!-- Category Badge Pill -->
+    <g transform="translate(0, 65)">
+      <rect width="275" height="30" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.8"/>
+      <circle cx="15" cy="15" r="4" fill="#38bdf8" />
+      <text x="28" y="20" fill="#38bdf8" class="pill-text">CURATED SECURITY INTELLIGENCE</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="145" fill="url(#accentGrad)" class="title-text" font-size="44" filter="url(#subtleGlow)">
+      Awesome Activity Monitoring
+    </text>
+    <text x="0" y="195" fill="#f8fafc" class="title-text" font-size="40">
+      &amp; Anomaly Detection
+    </text>
+
+    <!-- Subtitle / Mission Statement -->
+    <text x="0" y="240" fill="#94a3b8" class="subtitle-text" font-size="16">
+      Enterprise SaaS &amp; Open-Source tools for User Entity Behavior Analytics (UEBA),
+    </text>
+    <text x="0" y="264" fill="#94a3b8" class="subtitle-text" font-size="16">
+      continuous SIEM event correlation, behavioral baselining, and automated threat hunting.
+    </text>
+
+    <!-- Feature Tags / Quick Pills -->
+    <g transform="translate(0, 305)">
+      <!-- Pill 1: UEBA -->
+      <g transform="translate(0, 0)">
+        <rect width="80" height="28" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+        <text x="14" y="19" fill="#e2e8f0" class="pill-text">🛡️ UEBA</text>
+      </g>
+      <!-- Pill 2: SIEM -->
+      <g transform="translate(92, 0)">
+        <rect width="125" height="28" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+        <text x="14" y="19" fill="#e2e8f0" class="pill-text">📊 Next-Gen SIEM</text>
+      </g>
+      <!-- Pill 3: ML Anomaly -->
+      <g transform="translate(229, 0)">
+        <rect width="180" height="28" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+        <text x="14" y="19" fill="#e2e8f0" class="pill-text">🧠 ML Anomaly Detection</text>
+      </g>
+      <!-- Pill 4: Open Source -->
+      <g transform="translate(421, 0)">
+        <rect width="155" height="28" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+        <text x="14" y="19" fill="#e2e8f0" class="pill-text">⚡ 100% Self-Hosted</text>
+      </g>
+    </g>
+
+  </g>
+
+  <!-- Clean Border Stroke -->
+  <rect width="1200" height="420" rx="16" fill="none" stroke="#334155" stroke-width="1.5" stroke-opacity="0.6"/>
+</svg>
